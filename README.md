@@ -1,5 +1,5 @@
-#Semaforo
-![Ejemplo de ejecución]("src/img/azul.png")
-![Ejemplo de ejecución]("src/img/rojo.png")
-![Ejemplo de ejecución]("src/img/verde.png")
-![Ejemplo de ejecución]("src/img/ambar.png")
+# Semaforo
+![Logo](src/img/azul.png)
+![Logo](src/img/rojo.png)
+![Logo](src/img/verde.png)
+![Logo](src/img/ambar.png)
