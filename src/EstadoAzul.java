@@ -11,13 +11,16 @@ public class EstadoAzul implements Estado {
 
     public void ejecutarAccion() {
         try {
+            sound();
             System.out.println("Estado Azul");
             Thread.sleep(3000);
+            clip.close();
             if (estadoAnterior != null) {
                 semaforo.setEstado(estadoAnterior);
             } else {
                 semaforo.setEstado(new EstadoRojo());
             }
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

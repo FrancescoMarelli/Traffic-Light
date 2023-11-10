@@ -1,0 +1,66 @@
+@startuml
+class Semaforo {
+- Estado estado
++ void setEstado(Estado)
++ Estado getEstado()
++ void ejecutarAccion()
++ ImageIcon getImage()
+}
+class EstadoRojo {
+- Semaforo semaforo
++ void ejecutarAccion()
++ ImageIcon getImage()
++ int getTime()
++ void setSemaforo(Semaforo)
++ void sound()
+}
+class EstadoAmbar {
+- Semaforo semaforo
++ void ejecutarAccion()
++ ImageIcon getImage()
++ int getTime()
++ void setSemaforo(Semaforo)
++ void sound()
+}
+class EstadoVerde {
+- Semaforo semaforo
++ void ejecutarAccion()
++ ImageIcon getImage()
++ int getTime()
++ void setSemaforo(Semaforo)
++ void sound()
+}
+class Main {
++ {static} void main(String[])
+}
+interface Estado {
+~ void ejecutarAccion()
+~ ImageIcon getImage()
+~ int getTime()
+~ void sound()
+~ void setSemaforo(Semaforo)
+}
+class SemaforoWindow {
+- JLabel label
+- Semaforo semaforo
+- Timer timer
+- void setupTimer()
++ void startSimulation()
+- void update()
+}
+class EstadoVerdeParpadea {
+~ Semaforo semaforo
++ void ejecutarAccion()
++ ImageIcon getImage()
++ int getTime()
++ void setSemaforo(Semaforo)
++ void sound()
+}
+
+
+Estado <|.. EstadoRojo
+Estado <|.. EstadoAmbar
+Estado <|.. EstadoVerde
+JFrame <|-- SemaforoWindow
+Estado <|.. EstadoVerdeParpadea
+@enduml

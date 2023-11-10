@@ -1,0 +1,11 @@
+
+:
+java:S2119"Save and re-use this "Random".(¼ÝÅf8Ô¶®Ã»1
+{
+java:S2142!"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8«óš¯»1
+G	java:S106"+Replace this use of System.out by a logger.(£°Þ‚8£× ²»1
+G	java:S106"+Replace this use of System.out by a logger.(£°Þ‚8üÎ¯Ã»1
+L	java:S106;"+Replace this use of System.out by a logger.(¨¶ÑÍþÿÿÿÿ8ÿá¯Ã»1
+T
+java:S1068
+"2Remove this unused "estadoAnterior" private field.(¤ŸËÄÿÿÿÿÿ8Ñ‡ÓÃ»1
